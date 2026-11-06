@@ -93,15 +93,15 @@ td{padding:7px 0;border-bottom:1px solid var(--rule)}td.c{font-family:var(--sans
 .vl .it{display:grid;grid-template-columns:105px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid #d3d1ca}.vl .it:first-child{padding-top:0}
 .vl .ph{height:70px}.vl h3{font-weight:400;font-size:16px;line-height:1.3}
 .vl b{font-family:var(--disp);font-size:26px;display:block;line-height:1}
-.rvg{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;align-content:start}
-.rv{padding:16px 0;border-bottom:1px solid var(--rule)}
-.rv p{font-size:16px;line-height:1.55}
-.rv p:before{content:"\201C";font-family:var(--disp);font-weight:900;font-size:44px;line-height:.5;color:var(--red);display:block;height:18px}
-.rv b{display:block;font-family:var(--disp);font-size:17px;margin-top:10px}
+.rvg{display:grid;grid-template-columns:repeat(2, 1fr);gap:30px;align-content:start}
+.rv{padding:20px;border:1px solid var(--rule);background:#fff}
+.rv p{font-size:15px;line-height:1.55}
+.rv p:before{content:"\201C";font-family:var(--disp);font-weight:900;font-size:40px;line-height:.5;color:var(--red);display:block;height:15px}
+.rv b{display:block;font-family:var(--disp);font-size:17px;margin-top:12px}
 .rv span{font-family:var(--sans);font-size:13px;color:var(--mute)}
 @media(max-width:900px){.rvg{grid-template-columns:1fr}}
 /* letters */
-.lc{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.lc{display:grid;grid-template-columns:1fr;gap:40px}
 .lc h2{font-family:var(--disp);font-weight:800;font-size:32px;line-height:1.1;margin-bottom:6px}
 label{display:block;font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:14px 0 4px}
 input,textarea{width:100%;font:inherit;font-size:15px;padding:10px;border:1px solid #bcb8aa;background:#fff}
@@ -147,7 +147,7 @@ nav .page{justify-content:space-between}
 .g3>:first-child{grid-column:1/-1}
 .g3>*:nth-child(2){padding:14px 18px 14px 0!important}
 .g3>*:nth-child(3){padding:14px 0 14px 18px!important;border-left:1px solid var(--rule)!important}
-.rvg{grid-template-columns:1fr 1fr}.fc{grid-template-columns:repeat(3,1fr)}}
+.rvg{grid-template-columns:1fr}.fc{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:600px){
 body{font-size:14.5px}
 .mast{font-size:26px;gap:4px}.mast svg{width:40px;height:30px}
@@ -166,7 +166,7 @@ body{font-size:14.5px}
 .band{margin-top:40px;padding:26px 4% 32px}
 .dbl{font-size:22px;gap:10px}
 table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
-.ad{padding:34px 4% 26px}.ad b{font-size:24px}.ad span{font-size:12px;letter-spacing:.1em}.ad .btn{justify-self:start}
+.ad{padding:34px 4% 26px}.ad b{font-size:24px}.ad span{font-size:13px;letter-spacing:.1em}.ad .btn{justify-self:start}
 .log,.rvg,.r2{grid-template-columns:1fr}
 .player{padding:14px;min-height:210px}.big{font-size:22px}
 .vl .it{grid-template-columns:90px 1fr}
@@ -205,15 +205,21 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
     <h1>Architecting High-Performance Systems & Intelligent AI Pipelines in Indore</h1>
     <p class="deck">Software Developer, AI Engineer, Public Speaker, and Writer. Specializing in low-latency C++, LLM Engineering, RAG architectures, and distributed systems that keep running even under heavy server crashes.</p>
     <a class="by" href="#works">Read Flagship Story</a>
-    <div class="tl"><div class="ph" data-l="Water System" style="--a:#2b3a4a;--b:#10161d"></div><div><span class="k">Civic Impact</span><h3>Honoured by Mayor of Indore & Cabinet Minister for Smart Water Management Solutions</h3><a class="by" href="#desk">View Case Log</a></div></div>
-    <div class="tl"><div class="ph" data-l="Zenodo DOI" style="--a:#7a6d60;--b:#3c342a"></div><div><span class="k">Research & Publication</span><h3>Published C++20 Matching Engine Technical Report on Zenodo with official DOI</h3><a class="by" href="#works">Read Report ↗</a></div></div>
+    <div class="tl">
+      <img src="Assets/Manas demostration project.jpeg" alt="Manas demonstration project" style="width:150px; height:105px; object-fit:cover; border:1px solid #111; display:block;">
+      <div><span class="k">Civic Impact</span><h3>Hack'Ndore: Solved Indore's Water Management System by feeling the core problem and coding real solutions. Honoured by Govt of MP.</h3><a class="by" href="#desk">View Case Log</a></div>
+    </div>
+    <div class="tl">
+      <img src="Assets/Aashima Ai clg senior girl.jpeg" alt="Aashima AI" style="width:150px; height:105px; object-fit:cover; border:1px solid #111; display:block;">
+      <div><span class="k">AI Companion Innovation</span><h3>Aashima AI: Built an AI College Senior for juniors to help with college life and career doubts while feeding stray dogs with donations.</h3><a class="by" href="#works">Explore Project ↗</a></div>
+    </div>
   </article>
   <aside class="mid">
     <div class="s"><span class="k">⚡ C++ / Python & AI</span><h3>Technical Business Analyst at Brain Inventory, optimizing workflows & AI solutions</h3><a class="by" href="#desk">Exhibit A</a></div>
-    <div class="s"><span class="k">🎤 Public Speaking</span><h3>Articulate communicator with 8+ elite communication awards & active public speaking profile</h3><a class="by" href="#reviews">Read Letters</a></div>
+    <div class="s"><span class="k">🎤 Public Speaking</span><h3>Hosted the Mega CEO Summit Podcast at University, showcasing leadership & communication across 8+ elite awards.</h3><a class="by" href="#reviews">Read Letters</a></div>
     <div class="s"><span class="k">☁ Certifications</span><h3>Certified via Claude Code 101 alongside Google Cloud badges and elite technical milestones</h3><a class="by" href="#stack">View Stack</a></div>
     <div class="s"><span class="k">🏊 Sports & Fitness</span><h3>Competitive Swimmer, Basketball Player, and Badminton enthusiast</h3><a class="by" href="#contact">Get in touch</a></div>
-    <div class="ph" data-l="Systems Architecture" style="height:150px;margin-top:10px;--a:#4d6b4a;--b:#1f3320"></div>
+    <img src="Assets/Developed by Manas Jain.jpeg" alt="Developed by Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; margin-top:10px; display:block;">
   </aside>
   <aside class="lt">
     <div class="crest"><svg><use href="#crest" style="color:#111"/></svg></div>
@@ -221,7 +227,7 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
     <div class="s"><h3>Opinion: Low latency and fault tolerance are non-negotiable for modern financial infrastructure</h3></div>
     <div class="sh" style="font-size:24px;margin:14px 0 8px;border:0;padding:0;color:var(--red)">Wire Updates →</div>
     <div class="s"><span class="t">Flagship Launch</span><h3>Released Meridian C++20 stock-exchange matching engine with Raft replication</h3></div>
-    <div class="s"><span class="t">Civic Recognition</span><h3>Developed IoT & AI monitoring models for Narmada water distribution systems</h3></div>
+    <div class="s"><span class="t">Email Engine</span><h3>Built Nectar: Full-stack lead generation & cold email dispatch engine using Google Apps Script & React.</h3></div>
     <div class="s"><span class="t">Global Reach</span><h3>Published research paper on Zenodo with public DOI citation</h3></div>
     <a class="by" href="#blotter">Explore GitHub Activity</a>
   </aside>
@@ -232,7 +238,6 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
   <div class="sh">Flagship Research & Systems <a href="https://github.com/manasjainwork" target="_blank">GitHub ↗</a></div>
   <div class="g3" style="padding-top:0">
     <article>
-      <!-- Meridian Image Integrated Here -->
       <img src="Assets/meridian.jpeg" alt="Meridian Engine" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block;">
       <span class="k" style="margin-top:14px">⚙️ C++20 Core Project · Fault Tolerant</span>
       <h1 style="font-family:var(--disp);font-weight:800;font-size:34px;line-height:1.12;margin:2px 0 10px">Meridian: Stock-Exchange-Style Matching Engine in C++20</h1>
@@ -246,9 +251,9 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
       <div class="s"><div class="ph" data-l="Backend" style="aspect-ratio:16/10;--a:#4d6b4a;--b:#1f3320"></div><span class="k" style="margin-top:10px">🐍 Python Backends</span><h3>High-performance Python and backend infrastructure engineering</h3><a class="by" href="https://github.com/manasjainwork" target="_blank">GitHub</a></div>
     </div>
     <div class="thl">
-      <div class="it"><div><span class="k">🌐 Water IoT AI</span><h3>Indore Water Management: IoT sensors, AI predictive maintenance & GIS pipeline mapping</h3></div><div class="ph" data-l="IoT AI" style="--a:#bbb;--b:#888"></div></div>
-      <div class="it"><div><span class="k">📊 Business Analyst</span><h3>Brain Inventory: AI and automation workflow optimization</h3></div><div class="ph" data-l="AI Ops" style="--a:#b9c4b0;--b:#7d8c72"></div></div>
-      <div class="it"><div><span class="k">🎙️ Public Speaking</span><h3>8+ Elite Communication Awards & certified public articulation</h3></div><div class="ph" data-l="Speaker" style="--a:#7a6fb0;--b:#3c3470"></div></div>
+      <div class="it"><div><span class="k">🌐 ShortCraze SaaS</span><h3>ShortCraze SaaS: Custom keywords, color themes, and QR codes with 400+ link creations.</h3></div><div class="ph" data-l="SaaS" style="--a:#bbb;--b:#888"></div></div>
+      <div class="it"><div><span class="k">📊 Nectar Dispatch</span><h3>Nectar: Lead generation and automated email dispatch engine running on Google Apps Script & React.</h3></div><div class="ph" data-l="Email API" style="--a:#b9c4b0;--b:#7d8c72"></div></div>
+      <div class="it"><div><span class="k">🎙️ CEO Podcast</span><h3>Hosted Mega CEO Summit Podcast at university, driving community connection and public speaking.</h3></div><div class="ph" data-l="Podcast" style="--a:#7a6fb0;--b:#3c3470"></div></div>
       <div class="it"><div><span class="k">☁️ Certifications</span><h3>Claude Code 101 & Google Cloud platform verified badges</h3></div><div class="ph" data-l="Badge" style="--a:#b0a07a;--b:#6e6240"></div></div>
     </div>
   </div>
@@ -307,20 +312,39 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
   </div>
 </section>
 
-<!-- REVIEWS -->
+<!-- PODCAST HIGHLIGHT SECTION WITH IMAGE -->
+<section class="band" style="background:var(--paper);">
+  <div class="dbl">Leadership & Public Speaking</div>
+  <div style="display:grid; grid-template-columns: 1fr 1.5fr; gap:30px; align-items:center;">
+    <img src="Assets/THE PODCAST.jpeg" alt="The Podcast" style="width:100%; aspect-ratio:4/3; object-fit:cover; border:1px solid #111; display:block;">
+    <div>
+      <span class="k">Mega CEO Summit Podcast</span>
+      <h2 style="font-family:var(--disp); font-size:28px; margin:8px 0 12px;">Hosting Leaders & Fostering Community Connections</h2>
+      <p style="font-size:15px; line-height:1.6; color:#333;">Hosted the podcast at the Mega CEO Summit, inviting CEOs of IT companies and fresh startups to share insights. Designed to showcase leadership and public speaking skills beyond just technical coding expertise, demonstrating confidence in front of large audiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS & ENDORSEMENTS -->
 <section id="reviews">
-  <div class="sh">Letters to the Editor <a href="#rf">Write a letter</a></div>
-  <div class="lc">
-    <div class="rvg" id="rv"></div>
-    <div class="xw"><h3>Write to the editor</h3><i style="font-size:13px;color:var(--mute)">Worked with Manas? Leave a note regarding his engineering or communication skills.</i>
-      <form id="rf">
-        <label for="rn">Your name</label><input id="rn" maxlength="60" required>
-        <label for="rr">Role / company</label><input id="rr" maxlength="80">
-        <label for="rt">Your letter</label><textarea id="rt" rows="5" maxlength="500" required></textarea>
-        <input id="rh" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-        <div style="margin-top:14px"><button class="btn" type="submit">Send letter</button></div>
-        <p id="rmsg" style="font-size:13px;margin-top:10px;color:var(--mute)"></p>
-      </form></div>
+  <div class="sh">Letters to the Editor & Endorsements</div>
+  <div class="rvg">
+    <article class="rv">
+      <p>Even though we didn’t get a chance to team up directly, it’s super clear from our brief chats that Manas is genuinely passionate about his work. He brings a lot of confidence to the table, and the solid results he delivers really speak for themselves.</p>
+      <b>Smrity Bajpai</b>
+    </article>
+    <article class="rv">
+      <p>I've always admired your work. Your creativity, dedication, and approach to problem-solving are genuinely inspiring. As a junior, your work motivates me to learn more, grow professionally, and aim for better every day.</p>
+      <b>Rishita Mishra</b>
+    </article>
+    <article class="rv">
+      <p>Keep going Manas ! you have always been a star .</p>
+      <b>Atharv Vani</b>
+    </article>
+    <article class="rv">
+      <p>Obsessed with solving problems using his creativity .</p>
+      <b>Krish Lalwani</b>
+    </article>
   </div>
 </section>
 
@@ -336,10 +360,6 @@ table{font-size:13px}th:nth-child(3),td:nth-child(3){display:none}
         <div style="margin-top:16px"><button class="btn" type="submit">Send the letter</button></div>
       </form>
     </div>
-    <div class="xw"><h3>The Crossword</h3><i style="font-size:13px;color:var(--mute)">Five by five. Type in a square.</i>
-      <div class="g5" id="xw"></div>
-      <div class="cl"><div><b style="font-family:var(--sans);font-size:12px;letter-spacing:.1em">ACROSS</b><ul><li>1 C++ consensus algorithm</li><li>2 City famous for water systems</li><li>3 AI & Automation analyst firm</li></ul></div><div><b style="font-family:var(--sans);font-size:12px;letter-spacing:.1em">DOWN</b><ul><li>1 Low latency engine name</li><li>2 Public speaking skill</li><li>3 Zenodo document identifier</li></ul></div></div>
-      <button class="btn o" style="margin-top:12px;padding:5px 12px" onclick="xc()">Reset</button></div>
   </div>
   <div class="dl">
     <div><span class="k">Direct line</span><b>manasjaincode@gmail.com</b><span style="font-size:13px">For software development, AI engineering, and technical discussions.</span></div>
@@ -381,38 +401,7 @@ var B=[0,1,2,3,4,5,9,15,24],x=document.getElementById('xw'),cs=[];
 for(var i=0;i<25;i++){var n=document.createElement('input');n.maxLength=1;n.setAttribute('aria-label','square '+(i+1));if(B.indexOf(i)>-1){n.className='b';n.tabIndex=-1}
 n.oninput=(function(i){return function(){if(this.value&&cs[i+1])cs[i+1].focus()}})(i);cs.push(n);x.appendChild(n)}
 function xc(){cs.forEach(function(c){c.value=''})}
-document.getElementById('f').onsubmit=function(e){e.preventDefault();this.querySelector('button').textContent='Letter received';};
-</script>
-<script type="module">
-const CFG = null;
-const box=document.getElementById('rv'),form=document.getElementById('rf'),msg=document.getElementById('rmsg');
-function draw(list){
-  box.textContent='';
-  if(!list.length){box.innerHTML='<p style="color:var(--mute);font-style:italic">No letters yet. Be the first to write.</p>';return}
-  list.forEach(function(t){
-    var a=document.createElement('article');a.className='rv';
-    var p=document.createElement('p');p.textContent=t.text;
-    var b=document.createElement('b');b.textContent=t.name;
-    var s=document.createElement('span');s.textContent=[t.role,t.date].filter(Boolean).join(' · ');
-    a.append(p,b,s);box.appendChild(a);
-  });
-}
-var demo=[
- {name:'Government Recognition',role:'Govt of Madhya Pradesh',date:'2026',text:'Recognised for developing high-impact water management solutions using IoT and AI models to monitor Narmada water distribution.'},
- {name:'Technical Peer',role:`Brain Inventory Colleague`,date:'2026',text:'Exceptional grasp of AI automation workflows, distributed systems, and structured technical business analysis.'}
-];
-draw(demo);
-
-form.onsubmit=async function(e){
-  e.preventDefault();
-  if(document.getElementById('rh').value)return;
-  var d={name:rn.value.trim(),role:rr.value.trim(),text:rt.value.trim()};
-  if(!d.name||!d.text)return;
-  var btn=form.querySelector('button');btn.disabled=true;
-  msg.textContent='Demo mode: letter noted. Thank you for reaching out to Manas!';
-  form.reset();
-  btn.disabled=false;
-};
+document.getElementById('f').onsubmit=function(e){e.preventDefault();this.querySelector('button').textContent='Message sent';};
 </script>
 </body>
 </html>
