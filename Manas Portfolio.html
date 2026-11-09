@@ -2,144 +2,159 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manas Jain — Software Developer & AI Engineer Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Mukta:wght@500;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#fdfcf9;--ink:#111;--red:#b3122b;--mute:#6b665c;--rule:#dcd8cc;--stone:#efece4;--grey:#e9e8e4;
---serif:"Merriweather",Georgia,serif;--disp:"Playfair Display","Merriweather",Georgia,serif;--sans:"Mukta",Arial,sans-serif}
+:root{
+  --paper:#fdfcf9;--ink:#111;--red:#b3122b;--mute:#6b665c;--rule:#dcd8cc;--stone:#efece4;--grey:#e9e8e4;
+  --serif:"Merriweather",Georgia,serif;--disp:"Playfair Display","Merriweather",Georgia,serif;--sans:"Mukta",Arial,sans-serif;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:15px;line-height:1.5;overflow-x:hidden}
 a{color:inherit;text-decoration:none}ul{list-style:none}
+img{max-width:100%;height:auto;display:block}
+
 .page{width:92%;max-width:1200px;margin:0 auto}
 .k{display:block;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
 .by{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--ink);margin-top:8px;font-weight:700}
 .ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--a,#cfcabc),var(--b,#9b9588));display:flex;align-items:flex-end;min-height:80px}
 .ph:after{content:attr(data-l);font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);padding:8px 10px;text-shadow:0 1px 2px rgba(0,0,0,.4)}
-/* header */
-.hd{display:flex;justify-content:space-between;align-items:center;padding:18px 0 14px;font-family:var(--sans);font-size:15px}
+
+/* Header */
+.hd{display:flex;justify-content:space-between;align-items:center;padding:18px 0 14px;font-family:var(--sans);font-size:15px;border-bottom:1px solid var(--rule)}
 .hd .l b{font-weight:700}.hd .l a{color:var(--red);font-weight:700;margin-left:8px}
 .hd .r{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .mast{display:flex;align-items:center;gap:6px;font-family:var(--disp);font-weight:900;font-size:46px;line-height:1;letter-spacing:.005em;text-transform:uppercase}
 .mast svg{width:64px;height:48px}
 .btn{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:9px 16px;border:0;cursor:pointer;border-radius:2px}
+
+/* Navigation */
 nav{position:sticky;top:0;z-index:20;background:var(--paper);box-shadow:0 4px 8px -4px rgba(0,0,0,.18)}
 nav .page{display:flex;align-items:center;justify-content:space-between;padding:12px 0;font-family:var(--sans)}
-nav .links{display:flex;gap:26px;font-family:var(--disp);font-weight:700;font-size:18px}
+nav .links{display:flex;gap:24px;font-family:var(--disp);font-weight:700;font-size:18px}
 nav .links a:hover,nav .links a.cur{color:var(--red)}
 #burger{background:none;border:0;font-size:24px;cursor:pointer;display:none}
 
-/* main grid */
-.g3{display:grid;grid-template-columns:1.8fr 1.2fr 1fr;gap:24px;padding:28px 0 10px}
-.g3>*{min-width:0}
-.g3>*+*{border-left:1px solid var(--rule);padding-left:24px}
-.lead h1{font-family:var(--disp);font-weight:800;font-size:34px;line-height:1.15;margin:8px 0 10px}
-.lead .deck{font-size:15px;line-height:1.5}
+/* Front Page Layout */
+.g3{display:flex;flex-wrap:wrap;gap:24px;padding:28px 0 10px}
+.g3 .lead{flex:1.8;min-width:300px}
+.g3 .mid{flex:1.2;min-width:260px;border-left:1px solid var(--rule);padding-left:24px}
+.g3 .lt{flex:1;min-width:240px;border-left:1px solid var(--rule);padding-left:24px}
+
+.lead h1{font-family:var(--disp);font-weight:800;font-size:34px;line-height:1.15;margin:12px 0 10px}
+.lead .deck{font-size:15px;line-height:1.55;color:#222;margin-bottom:12px}
+
 .s{padding:14px 0;border-bottom:1px solid var(--rule)}.s:first-of-type{padding-top:0}.s:last-child{border:0}
-.s h3{font-weight:400;font-size:17px;line-height:1.3}
-.s p{font-size:13.5px;color:#333;margin-top:4px}
-.tl{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--rule);margin-top:14px}
-.tl img{width:130px;height:90px;object-fit:cover;border:1px solid #111;display:block}
-.tl h3{font-weight:400;font-size:16px;line-height:1.3}
+.s h3{font-weight:400;font-size:17px;line-height:1.35}
+
+.tl{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--rule);margin-top:14px;align-items:flex-start}
+.tl img{width:120px;height:85px;object-fit:cover;border:1px solid #111;flex-shrink:0}
+.tl h3{font-weight:400;font-size:15.5px;line-height:1.35}
+
 .crest{text-align:center;padding-bottom:10px}
-.crest svg{width:140px;height:90px}
+.crest svg{width:130px;height:85px}
 .lt .t{font-family:var(--sans);font-weight:700;font-size:14px;text-transform:uppercase;color:var(--red);display:block}
 .lt .s{padding:10px 0}.lt .s h3{font-size:15px}
+
 .sh{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--disp);font-weight:800;font-size:28px;color:var(--red);border-bottom:1px solid var(--rule);padding-bottom:6px;margin:40px 0 20px}
 .sh a{font-family:var(--sans);font-size:13px;color:var(--ink);font-weight:700;text-transform:uppercase;border-bottom:1px solid var(--ink)}
 .sh.rl{margin-top:0}
 
-/* flagship dual column layout */
-.flagship-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-top:0}
-.flagship-grid article{min-width:0}
+/* Flagship Dual Column Layout */
+.flagship-grid{display:flex;flex-wrap:wrap;gap:24px}
+.flagship-grid article{flex:1;min-width:300px;background:#fff;border:1px solid var(--rule);padding:20px}
 
-.row2{display:grid;grid-template-columns:1.2fr 1.5fr 1.1fr;gap:24px;align-items:start}
-.row2 h2{font-family:var(--disp);font-weight:800;font-size:24px;line-height:1.15;margin-bottom:8px}
-.thl .it{padding:12px 0;border-bottom:1px solid var(--rule)}.thl .it:first-child{padding-top:0}.thl .it:last-child{border:0}
-.thl h3{font-weight:400;font-size:15px;line-height:1.3}
-.chips{margin:8px 0 2px;display:flex;gap:6px;flex-wrap:wrap}.chips span{font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--mute);color:var(--mute);padding:0 6px}
-.links3{display:flex;gap:20px;flex-wrap:wrap;margin:-4px 0 18px;font-family:var(--sans);font-weight:500;font-size:16px}
-.links3 a{border-bottom:1px solid var(--ink)}
+.chips{margin:10px 0 4px;display:flex;gap:6px;flex-wrap:wrap}
+.chips span{font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--mute);color:var(--mute);padding:0 6px}
 
-/* bands */
-.band{background:var(--stone);margin:44px 0 0;padding:30px 4% 36px}
+.thl .it{padding:12px 0;border-bottom:1px solid var(--rule)}
+.thl .it:first-child{padding-top:0}.thl .it:last-child{border:0}
+.thl h3{font-weight:400;font-size:15px;line-height:1.35}
+
+/* Bands & Tables */
+.band{background:var(--stone);margin:40px 0 0;padding:28px 4% 34px}
 .band.gr{background:var(--grey)}
 .dbl{display:flex;align-items:center;gap:16px;margin-bottom:22px;font-family:var(--disp);font-weight:800;font-size:28px;color:var(--red)}
 .dbl:before,.dbl:after{content:"";flex:1;height:4px;border-top:1px solid var(--red);border-bottom:1px solid var(--red);opacity:.55}
-table{width:100%;border-collapse:collapse;font-size:14px}
+
+.two-tables{display:flex;flex-wrap:wrap;gap:32px}
+.two-tables table{flex:1;min-width:280px;border-collapse:collapse;font-size:14px}
 th{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-weight:500;text-align:left;padding:7px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink)}
 td{padding:7px 0;border-bottom:1px solid var(--rule)}td.c{font-family:var(--sans);font-weight:700;font-size:13px;color:var(--red)}
 .up{color:#0d7a3e;font-family:var(--sans);font-weight:700;font-size:13px}.up.m{color:#a56a00}.up.d{color:var(--mute)}
 .bars i{display:inline-block;width:6px;height:11px;background:#cfcabb;margin-right:2px}.bars i.on{background:var(--red)}
 
-.ad{background:#111;color:#fff;margin:44px 0 0;padding:32px 4%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px;position:relative}
+.ad{background:#111;color:#fff;margin:40px 0 0;padding:28px 4%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;position:relative}
 .ad small{position:absolute;top:8px;left:14px;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:#aaa}
-.ad b{font-family:var(--disp);font-weight:900;font-size:36px;line-height:1.02;display:block;text-transform:uppercase}
-.ad span{font-family:var(--sans);font-size:16px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:6px}
+.ad b{font-family:var(--disp);font-weight:900;font-size:32px;line-height:1.05;display:block;text-transform:uppercase}
+.ad span{font-family:var(--sans);font-size:15px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:4px}
 
-.log{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px;margin-top:8px}
-.log .s h3{font-size:16px}.log .s{padding:12px 0!important;border-bottom:1px solid var(--rule)!important}
+.row2{display:flex;flex-wrap:wrap;gap:24px}
+.row2>div{flex:1;min-width:260px}
+.row2 h2{font-family:var(--disp);font-weight:800;font-size:24px;line-height:1.15;margin-bottom:8px}
+
+.log{display:flex;flex-wrap:wrap;gap:20px;margin-top:8px}
+.log .s{flex:1;min-width:240px;padding:12px 0!important;border-bottom:1px solid var(--rule)!important}
 .log .k.w{color:#fff;background:var(--red);display:inline-block;padding:0 6px}
 .log .d{font-family:var(--sans);font-size:13px;color:var(--mute)}
 
-/* blotter */
-.vid{display:grid;grid-template-columns:2.2fr 1fr;gap:28px}
+/* Blotter & Heatmap */
+.vid{display:flex;flex-wrap:wrap;gap:28px}
+.vid>div:first-child{flex:2;min-width:300px}
+.vid .vl{flex:1;min-width:240px}
+
 .player{background:#0d1117;color:#e6edf3;padding:18px;border-radius:6px;border:1px solid #30363d;display:flex;flex-direction:column}
 .player .t{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:13px;color:#848d97;display:flex;justify-content:space-between;margin-bottom:10px}
 .heat{display:grid;grid-template-columns:repeat(53, 1fr);grid-template-rows:repeat(7, 1fr);gap:3px;margin:6px 0;width:100%}
 .heat i{width:100%;aspect-ratio:1/1;border-radius:2px;background:#161b22;display:inline-block}
 .heat i.l1{background:#0e4429}.heat i.l2{background:#006d32}.heat i.l3{background:#26a641}.heat i.l4{background:#39d353}
 .player .f{display:flex;justify-content:space-between;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:12px;color:#848d97;margin-top:6px}
-.big{font-family:var(--disp);font-weight:800;font-size:26px;line-height:1.15;margin-top:14px}
-.vl .it{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #d3d1ca}.vl .it:first-child{padding-top:0}
-.vl .ph{height:60px}.vl h3{font-weight:400;font-size:15px;line-height:1.3}
+.big{font-family:var(--disp);font-weight:800;font-size:24px;line-height:1.2;margin-top:14px}
 
-.rvg{display:grid;grid-template-columns:repeat(2, 1fr);gap:24px;align-content:start}
-.rv{padding:18px;border:1px solid var(--rule);background:#fff}
+.vl .it{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #d3d1ca;align-items:center}
+.vl .ph{width:70px;height:50px;flex-shrink:0}
+
+.rvg{display:flex;flex-wrap:wrap;gap:24px}
+.rv{flex:1;min-width:280px;padding:18px;border:1px solid var(--rule);background:#fff}
 .rv p{font-size:14.5px;line-height:1.5}
 .rv p:before{content:"\201C";font-family:var(--disp);font-weight:900;font-size:36px;line-height:.5;color:var(--red);display:block;height:12px}
 .rv b{display:block;font-family:var(--disp);font-size:16px;margin-top:10px}
-.rv span{font-family:var(--sans);font-size:13px;color:var(--mute)}
 
-.dl{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);margin-top:20px;padding-top:18px;gap:20px}
-.dl>div+div{border-left:1px solid var(--rule);padding-left:20px}
+.dl{display:flex;flex-wrap:wrap;gap:24px;border-top:1px solid var(--rule);margin-top:20px;padding-top:18px}
+.dl>div{flex:1;min-width:240px}
 .dl b{font-family:var(--disp);font-size:20px;display:block;margin-top:4px}
 
-/* footer */
+/* Footer */
 footer{margin-top:50px;background:var(--grey);padding:32px 0 24px}
 .fl{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
 .fl .mast{font-size:36px}.fl .mast svg{width:44px;height:34px}
-.fc{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.fc{display:flex;flex-wrap:wrap;gap:24px}
+.fc>div{flex:1;min-width:140px}
 .fc h4{font-family:var(--sans);font-weight:700;font-size:15px;border-top:4px solid var(--ink);padding-top:10px;margin-bottom:10px}
 .fc a{display:block;font-family:var(--sans);font-weight:500;font-size:14px;margin:6px 0}
 .fc a:hover{color:var(--red)}
-.cp{margin-top:24px;padding-top:12px;border-top:2px solid var(--ink);font-family:var(--sans);font-size:13px;color:var(--mute);display:flex;justify-content:space-between}
+.cp{margin-top:24px;padding-top:12px;border-top:2px solid var(--ink);font-family:var(--sans);font-size:13px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
-/* RESPONSIVE BREAKPOINTS TO FIX OVERLAPS */
-@media(max-width:1024px){
-.g3{grid-template-columns:1fr 1fr}
-.g3>:nth-child(3){grid-column:span 2;border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:18px}
-.row2{grid-template-columns:1fr 1fr}.row2>:nth-child(3){grid-column:span 2}
-.flagship-grid{grid-template-columns:1fr}
-}
-
+/* Mobile Clean Overlap Fix */
 @media(max-width:768px){
-.page{width:92%}
-.hd{flex-direction:column;gap:10px;text-align:center}
-.hd .r{align-items:center}
-.mast{font-size:30px}
-#burger{display:block}
-nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:10px 5%;box-shadow:0 6px 10px rgba(0,0,0,.15);text-align:center}
-nav .links.open{display:flex}
-nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
-.g3,.row2,.vid,.dl,.fc,.flagship-grid{grid-template-columns:1fr!important}
-.g3>*{border-left:0!important;padding-left:0!important}
-.dl>div+div{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:12px}
-.log,.rvg{grid-template-columns:1fr}
-.ad{grid-template-columns:1fr;gap:14px}
+  .hd{flex-direction:column;gap:12px;text-align:center}
+  .hd .r{align-items:center}
+  .mast{font-size:32px}
+  #burger{display:block}
+  nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:10px 5%;box-shadow:0 6px 10px rgba(0,0,0,.15);text-align:center}
+  nav .links.open{display:flex}
+  nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
+  
+  .g3 .mid,.g3 .lt{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px}
+  .lead h1{font-size:26px}
+  .tl{flex-direction:column}
+  .tl img{width:100%;height:auto}
+  .podcast-box{flex-direction:column!important}
+  .sh{font-size:22px}
 }
 </style>
 </head>
@@ -149,7 +164,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
 
 <div class="page">
   <div class="hd">
-    <div class="l"><b>Indore</b> &nbsp;☁ 28°C &nbsp;Daily Tech Dispatch<br><span id="today">November 7, 2026</span></div>
+    <div class="l"><b>Indore</b> &nbsp;☁ 28°C &nbsp;Daily Tech Dispatch<br><span id="today">November 9, 2026</span></div>
     <div class="mast">Manas<svg><use href="#crest"/></svg>Jain</div>
     <div class="r"><span>RECOGNISED BY GOVT OF MADHYA PRADESH ⌂</span><a class="btn" href="#contact">Hire Me</a></div>
   </div>
@@ -173,7 +188,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
 <!-- FRONT PAGE -->
 <section class="g3">
   <article class="lead">
-    <img src="Assets/mainpic.jpeg" alt="Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block;">
+    <img src="Assets/mainpic.jpeg" alt="Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111;">
     <span class="k" style="margin-top:14px">Front Page Exclusive</span>
     <h1>Architecting High-Performance Systems & Intelligent AI Pipelines in Indore</h1>
     <p class="deck">Software Developer, AI Engineer, Public Speaker, and Writer. Specializing in low-latency C++, LLM Engineering, RAG architectures, and distributed systems that keep running even under heavy server crashes.</p>
@@ -221,14 +236,14 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
       <a class="by" href="#works">View SaaS Details</a>
     </div>
 
-    <img src="Assets/Developed by Manas Jain.jpg" alt="Developed by Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; margin-top:14px; display:block;">
+    <img src="Assets/Developed by Manas Jain.jpg" alt="Developed by Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; margin-top:14px;">
   </aside>
 
   <aside class="lt">
     <div class="crest"><svg><use href="#crest" style="color:#111"/></svg></div>
     <div class="s"><h3>Editor's Note: Building robust distributed engines in C++20 and resilient backend systems</h3></div>
     <div class="s"><h3>Opinion: Low latency and fault tolerance are non-negotiable for modern financial infrastructure</h3></div>
-    <div class="sh" style="font-size:22px;margin:14px 0 8px;border:0;padding:0;color:var(--red)">Wire Updates →</div>
+    <div class="sh" style="font-size:20px;margin:14px 0 8px;border:0;padding:0;color:var(--red)">Wire Updates →</div>
     
     <div class="s">
       <span class="t">Nectar Engine</span>
@@ -251,8 +266,8 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
   <div class="sh">Flagship Systems & Core Projects <a href="https://github.com/manasjainwork" target="_blank">GitHub ↗</a></div>
   <div class="flagship-grid">
     <!-- LHS: Meridian C++ Engine -->
-    <article style="background:#fff; border:1px solid var(--rule); padding:20px;">
-      <img src="Assets/meridian.jpeg" alt="Meridian Engine" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block; margin-bottom:14px;">
+    <article>
+      <img src="Assets/meridian.jpeg" alt="Meridian Engine" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; margin-bottom:14px;">
       <span class="k">⚙️ C++20 Core Project · Fault Tolerant</span>
       <h2 style="font-family:var(--disp); font-weight:800; font-size:24px; line-height:1.15; margin:6px 0 10px;">Meridian: Stock-Exchange-Style Matching Engine in C++20</h2>
       <p style="font-size:14.5px; line-height:1.5; color:#333; margin-bottom:12px;">Built a high-throughput matching engine that survives server crashes by copying state across machines via the Raft consensus algorithm. Tested rigorously with thousands of simulated network and node failures.</p>
@@ -264,7 +279,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
     </article>
 
     <!-- RHS: Nectar Email Dispatch Engine -->
-    <article style="background:#fff; border:1px solid var(--rule); padding:20px;">
+    <article>
       <div class="ph" data-l="Nectar Engine" style="aspect-ratio:16/10; margin-bottom:14px; --a:#4d6b4a; --b:#1f3320;"></div>
       <span class="k">🐍 Full-Stack Outreach & Lead Generation</span>
       <h2 style="font-family:var(--disp); font-weight:800; font-size:24px; line-height:1.15; margin:6px 0 10px;">Nectar: Lead Gen & Email Dispatch Engine</h2>
@@ -276,7 +291,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
     </article>
   </div>
 
-  <!-- OTHER PROJECTS SPOTLIGHT (ShortCraze, Aashima AI, etc.) -->
+  <!-- OTHER PROJECTS SPOTLIGHT -->
   <div class="sh" style="font-size:24px; margin-top:36px;">More Innovations & Projects</div>
   <div class="thl" style="background:#fff; border:1px solid var(--rule); padding:20px;">
     <div class="it">
@@ -294,7 +309,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
 <!-- STACK -->
 <section class="band" id="stack">
   <div class="dbl">Technical Arsenal & Stack</div>
-  <div class="two" style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+  <div class="two-tables">
     <table><thead><tr><th>Technology</th><th>Code</th><th>Proficiency</th><th>Focus Area</th></tr></thead><tbody id="t1"></tbody></table>
     <table><thead><tr><th>Technology</th><th>Code</th><th>Proficiency</th><th>Focus Area</th></tr></thead><tbody id="t2"></tbody></table>
   </div>
@@ -306,11 +321,10 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
 <!-- EXPERIENCE & RECOGNITION -->
 <section id="desk">
   <div class="sh">Experience & Recognition Desk <a href="https://www.linkedin.com/in/manas110" target="_blank">LinkedIn ↗</a></div>
-  <div class="links3"><a href="#">Honoured by Mayor of Indore</a><div>|</div><a href="#">Cabinet Minister Recognition for Water Management</a><div>|</div><a href="#">Brain Inventory Technical Business Analyst</a></div>
   <div class="row2">
     <div><h2>Honoured by the Mayor & Cabinet Minister for Indore Water Management Solutions</h2><p style="font-size:14px">Developed comprehensive IoT and AI-driven solutions to optimize Narmada river water distribution, implement leakage detection, and build centralized monitoring portals using GIS pipeline mapping.</p><a class="by">Manas Jain</a></div>
     <div>
-      <img src="Assets/recognition.jpeg" alt="Govt Recognition" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block;">
+      <img src="Assets/recognition.jpeg" alt="Govt Recognition" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111;">
     </div>
     <div class="thl">
       <div class="it"><h3>Brain Inventory: Technical Business Analyst in AI & Automation</h3></div>
@@ -324,7 +338,7 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
 
 <!-- BLOTTER -->
 <section class="band gr" id="blotter">
-  <div class="sh rl" style="margin-top:0">The Blotter <span style="display:flex;gap:22px"><a>Activity</a><a>Repositories</a><a>Zenodo DOI</a><a>Languages</a></span></div>
+  <div class="sh rl" style="margin-top:0">The Blotter <span style="display:flex;gap:22px"><a>Activity</a><a>Repositories</a><a>Zenodo DOI</a></span></div>
   <div class="vid">
     <div>
       <div class="player">
@@ -344,12 +358,12 @@ nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
   </div>
 </section>
 
-<!-- PODCAST HIGHLIGHT SECTION WITH IMAGE -->
+<!-- PODCAST HIGHLIGHT SECTION -->
 <section class="band" id="podcast-sec" style="background:var(--paper);">
   <div class="dbl">Leadership & Public Speaking</div>
-  <div style="display:grid; grid-template-columns: 1fr 1.5fr; gap:28px; align-items:center;">
-    <img src="Assets/THE PODCAST.jpg" alt="The Podcast" style="width:100%; aspect-ratio:4/3; object-fit:cover; border:1px solid #111; display:block;">
-    <div>
+  <div class="podcast-box" style="display:flex; gap:28px; align-items:center; flex-wrap:wrap;">
+    <img src="Assets/THE PODCAST.jpg" alt="The Podcast" style="flex:1; min-width:280px; aspect-ratio:4/3; object-fit:cover; border:1px solid #111;">
+    <div style="flex:1.5; min-width:280px;">
       <span class="k">Mega CEO Summit Podcast · 17th Sept 2024</span>
       <h2 style="font-family:var(--disp); font-size:26px; margin:8px 0 10px;">I Hosted the Mega "CEO Summit Podcast" at University 🏆</h2>
       <p style="font-size:15px; line-height:1.55; color:#333;">Hosted CEOs of IT companies & fresh startups to foster community connections[cite: 10]. Designed to showcase leadership and public speaking skills beyond just technical expertise — proving that speaking to convince large audiences requires confidence that sets real engineers apart[cite: 10].</p>
