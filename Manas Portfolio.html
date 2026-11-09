@@ -14,50 +14,56 @@
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:15px;line-height:1.5;overflow-x:hidden}
 a{color:inherit;text-decoration:none}ul{list-style:none}
-.page{width:94%;max-width:1240px;margin:0 auto}
+.page{width:92%;max-width:1200px;margin:0 auto}
 .k{display:block;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
 .by{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--ink);margin-top:8px;font-weight:700}
 .ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--a,#cfcabc),var(--b,#9b9588));display:flex;align-items:flex-end;min-height:80px}
 .ph:after{content:attr(data-l);font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);padding:8px 10px;text-shadow:0 1px 2px rgba(0,0,0,.4)}
 /* header */
-.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:18px 0 14px;font-family:var(--sans);font-size:15px}
+.hd{display:flex;justify-content:space-between;align-items:center;padding:18px 0 14px;font-family:var(--sans);font-size:15px}
 .hd .l b{font-weight:700}.hd .l a{color:var(--red);font-weight:700;margin-left:8px}
 .hd .r{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-.mast{display:flex;align-items:center;gap:6px;font-family:var(--disp);font-weight:900;font-size:52px;line-height:1;letter-spacing:.005em;text-transform:uppercase}
-.mast svg{width:76px;height:56px}
+.mast{display:flex;align-items:center;gap:6px;font-family:var(--disp);font-weight:900;font-size:46px;line-height:1;letter-spacing:.005em;text-transform:uppercase}
+.mast svg{width:64px;height:48px}
 .btn{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:9px 16px;border:0;cursor:pointer;border-radius:2px}
 nav{position:sticky;top:0;z-index:20;background:var(--paper);box-shadow:0 4px 8px -4px rgba(0,0,0,.18)}
-nav .page{display:flex;align-items:center;gap:26px;padding:12px 0;font-family:var(--sans)}
-nav .links{display:flex;gap:30px;margin:0 auto;font-family:var(--disp);font-weight:700;font-size:20px}
+nav .page{display:flex;align-items:center;justify-content:space-between;padding:12px 0;font-family:var(--sans)}
+nav .links{display:flex;gap:26px;font-family:var(--disp);font-weight:700;font-size:18px}
 nav .links a:hover,nav .links a.cur{color:var(--red)}
-#burger{background:none;border:0;font-size:24px;cursor:pointer}
-.sm{font-family:var(--sans);font-size:15px;color:var(--ink)}
+#burger{background:none;border:0;font-size:24px;cursor:pointer;display:none}
+
 /* main grid */
 .g3{display:grid;grid-template-columns:1.8fr 1.2fr 1fr;gap:24px;padding:28px 0 10px}
 .g3>*{min-width:0}
 .g3>*+*{border-left:1px solid var(--rule);padding-left:24px}
-.lead h1{font-family:var(--disp);font-weight:800;font-size:36px;line-height:1.15;margin:8px 0 10px}
-.lead .deck{font-size:15.5px;line-height:1.5}
+.lead h1{font-family:var(--disp);font-weight:800;font-size:34px;line-height:1.15;margin:8px 0 10px}
+.lead .deck{font-size:15px;line-height:1.5}
 .s{padding:14px 0;border-bottom:1px solid var(--rule)}.s:first-of-type{padding-top:0}.s:last-child{border:0}
-.s h3{font-weight:400;font-size:18px;line-height:1.3}
+.s h3{font-weight:400;font-size:17px;line-height:1.3}
 .s p{font-size:13.5px;color:#333;margin-top:4px}
-.tl{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--rule);margin-top:14px}
-.tl img{width:140px;height:95px;object-fit:cover;border:1px solid #111;display:block}
-.tl h3{font-weight:400;font-size:16.5px;line-height:1.3}
+.tl{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--rule);margin-top:14px}
+.tl img{width:130px;height:90px;object-fit:cover;border:1px solid #111;display:block}
+.tl h3{font-weight:400;font-size:16px;line-height:1.3}
 .crest{text-align:center;padding-bottom:10px}
-.crest svg{width:150px;height:100px}
+.crest svg{width:140px;height:90px}
 .lt .t{font-family:var(--sans);font-weight:700;font-size:14px;text-transform:uppercase;color:var(--red);display:block}
-.lt .s{padding:10px 0}.lt .s h3{font-size:15.5px}
+.lt .s{padding:10px 0}.lt .s h3{font-size:15px}
 .sh{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--disp);font-weight:800;font-size:28px;color:var(--red);border-bottom:1px solid var(--rule);padding-bottom:6px;margin:40px 0 20px}
 .sh a{font-family:var(--sans);font-size:13px;color:var(--ink);font-weight:700;text-transform:uppercase;border-bottom:1px solid var(--ink)}
 .sh.rl{margin-top:0}
+
+/* flagship dual column layout */
+.flagship-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-top:0}
+.flagship-grid article{min-width:0}
+
 .row2{display:grid;grid-template-columns:1.2fr 1.5fr 1.1fr;gap:24px;align-items:start}
 .row2 h2{font-family:var(--disp);font-weight:800;font-size:24px;line-height:1.15;margin-bottom:8px}
 .thl .it{padding:12px 0;border-bottom:1px solid var(--rule)}.thl .it:first-child{padding-top:0}.thl .it:last-child{border:0}
-.thl h3{font-weight:400;font-size:15.5px;line-height:1.3}
+.thl h3{font-weight:400;font-size:15px;line-height:1.3}
 .chips{margin:8px 0 2px;display:flex;gap:6px;flex-wrap:wrap}.chips span{font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--mute);color:var(--mute);padding:0 6px}
 .links3{display:flex;gap:20px;flex-wrap:wrap;margin:-4px 0 18px;font-family:var(--sans);font-weight:500;font-size:16px}
 .links3 a{border-bottom:1px solid var(--ink)}
+
 /* bands */
 .band{background:var(--stone);margin:44px 0 0;padding:30px 4% 36px}
 .band.gr{background:var(--grey)}
@@ -68,14 +74,17 @@ th{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:upp
 td{padding:7px 0;border-bottom:1px solid var(--rule)}td.c{font-family:var(--sans);font-weight:700;font-size:13px;color:var(--red)}
 .up{color:#0d7a3e;font-family:var(--sans);font-weight:700;font-size:13px}.up.m{color:#a56a00}.up.d{color:var(--mute)}
 .bars i{display:inline-block;width:6px;height:11px;background:#cfcabb;margin-right:2px}.bars i.on{background:var(--red)}
+
 .ad{background:#111;color:#fff;margin:44px 0 0;padding:32px 4%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px;position:relative}
 .ad small{position:absolute;top:8px;left:14px;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:#aaa}
 .ad b{font-family:var(--disp);font-weight:900;font-size:36px;line-height:1.02;display:block;text-transform:uppercase}
 .ad span{font-family:var(--sans);font-size:16px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:6px}
+
 .log{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px;margin-top:8px}
 .log .s h3{font-size:16px}.log .s{padding:12px 0!important;border-bottom:1px solid var(--rule)!important}
 .log .k.w{color:#fff;background:var(--red);display:inline-block;padding:0 6px}
 .log .d{font-family:var(--sans);font-size:13px;color:var(--mute)}
+
 /* blotter */
 .vid{display:grid;grid-template-columns:2.2fr 1fr;gap:28px}
 .player{background:#0d1117;color:#e6edf3;padding:18px;border-radius:6px;border:1px solid #30363d;display:flex;flex-direction:column}
@@ -87,36 +96,50 @@ td{padding:7px 0;border-bottom:1px solid var(--rule)}td.c{font-family:var(--sans
 .big{font-family:var(--disp);font-weight:800;font-size:26px;line-height:1.15;margin-top:14px}
 .vl .it{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #d3d1ca}.vl .it:first-child{padding-top:0}
 .vl .ph{height:60px}.vl h3{font-weight:400;font-size:15px;line-height:1.3}
+
 .rvg{display:grid;grid-template-columns:repeat(2, 1fr);gap:24px;align-content:start}
 .rv{padding:18px;border:1px solid var(--rule);background:#fff}
 .rv p{font-size:14.5px;line-height:1.5}
 .rv p:before{content:"\201C";font-family:var(--disp);font-weight:900;font-size:36px;line-height:.5;color:var(--red);display:block;height:12px}
 .rv b{display:block;font-family:var(--disp);font-size:16px;margin-top:10px}
 .rv span{font-family:var(--sans);font-size:13px;color:var(--mute)}
+
 .dl{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);margin-top:20px;padding-top:18px;gap:20px}
 .dl>div+div{border-left:1px solid var(--rule);padding-left:20px}
 .dl b{font-family:var(--disp);font-size:20px;display:block;margin-top:4px}
+
 /* footer */
 footer{margin-top:50px;background:var(--grey);padding:32px 0 24px}
 .fl{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
-.fl .mast{font-size:40px}.fl .mast svg{width:50px;height:38px}
+.fl .mast{font-size:36px}.fl .mast svg{width:44px;height:34px}
 .fc{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
-.fc h4{font-family:var(--sans);font-weight:700;font-size:16px;border-top:4px solid var(--ink);padding-top:10px;margin-bottom:10px}
-.fc a{display:block;font-family:var(--sans);font-weight:500;font-size:15px;margin:6px 0}
+.fc h4{font-family:var(--sans);font-weight:700;font-size:15px;border-top:4px solid var(--ink);padding-top:10px;margin-bottom:10px}
+.fc a{display:block;font-family:var(--sans);font-weight:500;font-size:14px;margin:6px 0}
 .fc a:hover{color:var(--red)}
 .cp{margin-top:24px;padding-top:12px;border-top:2px solid var(--ink);font-family:var(--sans);font-size:13px;color:var(--mute);display:flex;justify-content:space-between}
 
+/* RESPONSIVE BREAKPOINTS TO FIX OVERLAPS */
 @media(max-width:1024px){
-.g3{grid-template-columns:1fr 1fr}.g3>:nth-child(3){grid-column:span 2;border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:18px}
+.g3{grid-template-columns:1fr 1fr}
+.g3>:nth-child(3){grid-column:span 2;border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:18px}
 .row2{grid-template-columns:1fr 1fr}.row2>:nth-child(3){grid-column:span 2}
+.flagship-grid{grid-template-columns:1fr}
 }
+
 @media(max-width:768px){
 .page{width:92%}
-.hd{grid-template-columns:1fr}.hd .l,.hd .r{display:none}.mast{font-size:32px;justify-content:center}
-nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:6px 4%;box-shadow:0 6px 10px rgba(0,0,0,.15)}nav .links.open{display:flex}
-.g3,.row2,.vid,.dl,.fc{grid-template-columns:1fr!important}.g3>*{border-left:0!important;padding-left:0!important}
+.hd{flex-direction:column;gap:10px;text-align:center}
+.hd .r{align-items:center}
+.mast{font-size:30px}
+#burger{display:block}
+nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:10px 5%;box-shadow:0 6px 10px rgba(0,0,0,.15);text-align:center}
+nav .links.open{display:flex}
+nav .links a{padding:10px 0;border-bottom:1px solid var(--rule)}
+.g3,.row2,.vid,.dl,.fc,.flagship-grid{grid-template-columns:1fr!important}
+.g3>*{border-left:0!important;padding-left:0!important}
 .dl>div+div{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:12px}
 .log,.rvg{grid-template-columns:1fr}
+.ad{grid-template-columns:1fr;gap:14px}
 }
 </style>
 </head>
@@ -126,14 +149,24 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
 
 <div class="page">
   <div class="hd">
-    <div class="l"><b>Indore</b> &nbsp;☁ 28°C &nbsp;Daily Tech Dispatch<br><span id="today">November 7, 2026</span><a href="#">e-Paper</a></div>
+    <div class="l"><b>Indore</b> &nbsp;☁ 28°C &nbsp;Daily Tech Dispatch<br><span id="today">November 7, 2026</span></div>
     <div class="mast">Manas<svg><use href="#crest"/></svg>Jain</div>
     <div class="r"><span>RECOGNISED BY GOVT OF MADHYA PRADESH ⌂</span><a class="btn" href="#contact">Hire Me</a></div>
   </div>
 </div>
+
 <nav><div class="page">
-  <button id="burger" aria-label="Menu">☰</button><span class="sm">⌕ Search</span>
-  <div class="links" id="links"><a href="#top" class="cur">Front Page</a><a href="#works">Flagship Engine</a><a href="#stack">Tech Stack</a><a href="#desk">Experience</a><a href="#blotter">Activity</a><a href="#reviews">Endorsements</a><a href="#contact">Contact</a></div>
+  <div style="font-family:var(--sans); font-weight:700; font-size:15px;">Manas Jain Portfolio</div>
+  <button id="burger" aria-label="Menu">☰</button>
+  <div class="links" id="links">
+    <a href="#top" class="cur">Front Page</a>
+    <a href="#works">Flagship Systems</a>
+    <a href="#stack">Tech Stack</a>
+    <a href="#desk">Experience</a>
+    <a href="#blotter">Activity</a>
+    <a href="#reviews">Endorsements</a>
+    <a href="#contact">Contact</a>
+  </div>
 </div></nav>
 
 <main class="page" id="top">
@@ -146,22 +179,22 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
     <p class="deck">Software Developer, AI Engineer, Public Speaker, and Writer. Specializing in low-latency C++, LLM Engineering, RAG architectures, and distributed systems that keep running even under heavy server crashes.</p>
     <a class="by" href="#works">Read Flagship Story</a>
     
-    <!-- LinkedIn Post Hook 1: Hack'Ndore Water Management -->
+    <!-- Hack'Ndore Water Management -->
     <div class="tl">
       <img src="Assets/Manas demostration project.jpg" alt="Manas demonstration project">
       <div>
         <span class="k">Civic Impact · Hack'Ndore</span>
-        <h3>"Why I Laugh at Developers Who Just Clone Projects 😂" — Solved Indore's Water Management System by feeling the core problem and coding real solutions from scratch. Honoured by Govt of MP.</h3>
+        <h3>"Why I Laugh at Developers Who Just Clone Projects 😂" — Solved Indore's Water Management System by feeling the core problem and coding real solutions from scratch[cite: 10]. Honoured by Govt of MP.</h3>
         <a class="by" href="#desk">View Case Log</a>
       </div>
     </div>
     
-    <!-- LinkedIn Post Hook 2: Aashima AI Senior -->
+    <!-- Aashima AI Senior -->
     <div class="tl">
       <img src="Assets/Aashima Ai clg senior girl.jpg" alt="Aashima AI">
       <div>
         <span class="k">AI Companion & Stray Dog Feeding Initiative</span>
-        <h3>"Built an AI College Senior — Aashima AI. Her replies are so good, chat for 10 minutes and you'll forget she's an AI." Every small donation feeds stray dogs while chats remain 100% free.</h3>
+        <h3>"Built an AI College Senior — Aashima AI. Her replies are so good, chat for 10 minutes and you'll forget she's an AI." Every small donation feeds stray dogs while chats remain 100% free[cite: 10].</h3>
         <a class="by" href="#works">Explore Project ↗</a>
       </div>
     </div>
@@ -174,21 +207,20 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
       <a class="by" href="#desk">Exhibit A</a>
     </div>
 
-    <!-- LinkedIn Post Hook 3: Podcast & Public Speaking -->
+    <!-- Podcast & Public Speaking -->
     <div class="s">
       <span class="k">🎤 Leadership & Public Speaking</span>
-      <h3>"I Hosted the Mega CEO Summit Podcast at University" — Speaking to convince large audiences requires confidence, proving technical leaders aren't just geeks or nerds.</h3>
+      <h3>"I Hosted the Mega CEO Summit Podcast at University" — Speaking to convince large audiences requires confidence, proving technical leaders aren't just geeks or nerds[cite: 10].</h3>
       <a class="by" href="#podcast-sec">Read Story</a>
     </div>
 
-    <!-- LinkedIn Post Hook 4: ShortCraze SaaS -->
+    <!-- ShortCraze SaaS -->
     <div class="s">
       <span class="k">🚀 SaaS Engine Milestone</span>
-      <h3>"Celebrating Massive Success of ShortCraze SaaS" — 70+ new users in a month & 400+ link creations. Features custom keywords, 30+ dashboard themes, and instant QR generation.</h3>
+      <h3>"Celebrating Massive Success of ShortCraze SaaS" — 70+ new users in a month & 400+ link creations. Features custom keywords, 30+ dashboard themes, and instant QR generation[cite: 10].</h3>
       <a class="by" href="#works">View SaaS Details</a>
     </div>
 
-    <!-- Image 3: Developed by Manas Jain Banner -->
     <img src="Assets/Developed by Manas Jain.jpg" alt="Developed by Manas Jain" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; margin-top:14px; display:block;">
   </aside>
 
@@ -198,10 +230,9 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
     <div class="s"><h3>Opinion: Low latency and fault tolerance are non-negotiable for modern financial infrastructure</h3></div>
     <div class="sh" style="font-size:22px;margin:14px 0 8px;border:0;padding:0;color:var(--red)">Wire Updates →</div>
     
-    <!-- LinkedIn Post Hook 5: Nectar Email Engine -->
     <div class="s">
       <span class="t">Nectar Engine</span>
-      <h3>Nectar: Full-Stack Outreach & Lead Generation Platform with AI Enrichment (Llama 3.3 70B), Brevo automated dispatch & zero-server cost.</h3>
+      <h3>Nectar: Full-Stack Outreach & Lead Generation Platform with AI Enrichment (Llama 3.3 70B), Brevo automated dispatch & zero-server cost[cite: 10].</h3>
     </div>
     <div class="s">
       <span class="t">Flagship Launch</span>
@@ -215,27 +246,47 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
   </aside>
 </section>
 
-<!-- WORKS / FLAGSHIP PROJECT -->
+<!-- FLAGSHIP RESEARCH & SYSTEMS: MERIDIAN (LHS) & NECTAR (RHS) -->
 <section id="works">
-  <div class="sh">Flagship Research & Systems <a href="https://github.com/manasjainwork" target="_blank">GitHub ↗</a></div>
-  <div class="g3" style="padding-top:0">
-    <article>
-      <img src="Assets/meridian.jpeg" alt="Meridian Engine" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block;">
-      <span class="k" style="margin-top:14px">⚙️ C++20 Core Project · Fault Tolerant</span>
-      <h1 style="font-family:var(--disp);font-weight:800;font-size:30px;line-height:1.12;margin:2px 0 10px">Meridian: Stock-Exchange-Style Matching Engine in C++20</h1>
-      <p class="deck" style="font-size:15px">Built a high-throughput matching engine that survives server crashes by copying state across machines via the Raft consensus algorithm. Tested rigorously with thousands of simulated network and node failures without losing or misordering a single order.</p>
-      <div class="chips"><span>💻 C++20</span><span>⚡ Distributed Systems</span><span>🔗 Raft Consensus</span><span>🚀 Low Latency</span><span>📄 Zenodo DOI</span></div>
-      <a class="by" href="https://doi.org/10.5281/zenodo.23856006" target="_blank">Read Zenodo Report (DOI) ↗</a> &nbsp; 
-      <a class="by" href="https://github.com/manasjainwork/meridian" target="_blank">View Code (GitHub) ↗</a>
+  <div class="sh">Flagship Systems & Core Projects <a href="https://github.com/manasjainwork" target="_blank">GitHub ↗</a></div>
+  <div class="flagship-grid">
+    <!-- LHS: Meridian C++ Engine -->
+    <article style="background:#fff; border:1px solid var(--rule); padding:20px;">
+      <img src="Assets/meridian.jpeg" alt="Meridian Engine" style="width:100%; aspect-ratio:16/10; object-fit:cover; border:1px solid #111; display:block; margin-bottom:14px;">
+      <span class="k">⚙️ C++20 Core Project · Fault Tolerant</span>
+      <h2 style="font-family:var(--disp); font-weight:800; font-size:24px; line-height:1.15; margin:6px 0 10px;">Meridian: Stock-Exchange-Style Matching Engine in C++20</h2>
+      <p style="font-size:14.5px; line-height:1.5; color:#333; margin-bottom:12px;">Built a high-throughput matching engine that survives server crashes by copying state across machines via the Raft consensus algorithm. Tested rigorously with thousands of simulated network and node failures.</p>
+      <div class="chips"><span>💻 C++20</span><span>⚡ Distributed Systems</span><span>🔗 Raft</span><span>🚀 Low Latency</span><span>📄 Zenodo DOI</span></div>
+      <div style="margin-top:14px; display:flex; gap:16px;">
+        <a class="by" href="https://doi.org/10.5281/zenodo.23856006" target="_blank">Zenodo Report (DOI) ↗</a>
+        <a class="by" href="https://github.com/manasjainwork/meridian" target="_blank">GitHub Repo ↗</a>
+      </div>
     </article>
-    <div>
-      <div class="s"><div class="ph" data-l="AI & RAG" style="aspect-ratio:16/10;--a:#365a7a;--b:#16283a"></div><span class="k" style="margin-top:10px">🤖 LLM & ML Systems</span><h3>Advanced RAG & ML-Ops pipelines built for scalable enterprise automation</h3><a class="by" href="https://github.com/manasjainwork" target="_blank">GitHub</a></div>
-      <div class="s"><div class="ph" data-l="Backend" style="aspect-ratio:16/10;--a:#4d6b4a;--b:#1f3320"></div><span class="k" style="margin-top:10px">🐍 Nectar Email Dispatch Engine</span><h3>Full-stack React + Apps Script lead generation engine with Groq AI enrichment & Brevo delivery</h3><a class="by" href="https://github.com/manasjainwork" target="_blank">GitHub</a></div>
+
+    <!-- RHS: Nectar Email Dispatch Engine -->
+    <article style="background:#fff; border:1px solid var(--rule); padding:20px;">
+      <div class="ph" data-l="Nectar Engine" style="aspect-ratio:16/10; margin-bottom:14px; --a:#4d6b4a; --b:#1f3320;"></div>
+      <span class="k">🐍 Full-Stack Outreach & Lead Generation</span>
+      <h2 style="font-family:var(--disp); font-weight:800; font-size:24px; line-height:1.15; margin:6px 0 10px;">Nectar: Lead Gen & Email Dispatch Engine</h2>
+      <p style="font-size:14.5px; line-height:1.5; color:#333; margin-bottom:12px;">Full-stack outreach platform built with React 19, Vite, and Google Apps Script (V8) backend[cite: 10]. Features automated lead scraping from Google Maps, AI enrichment via Groq (Llama 3.3 70B), and background queue delivery via Brevo[cite: 10].</p>
+      <div class="chips"><span>⚛️ React 19</span><span>⚡ Google Apps Script</span><span>🤖 Groq AI</span><span>📧 Brevo API</span><span>📊 Google Sheets</span></div>
+      <div style="margin-top:14px; display:flex; gap:16px;">
+        <a class="by" href="https://github.com/manasjainwork" target="_blank">View Nectar Code ↗</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- OTHER PROJECTS SPOTLIGHT (ShortCraze, Aashima AI, etc.) -->
+  <div class="sh" style="font-size:24px; margin-top:36px;">More Innovations & Projects</div>
+  <div class="thl" style="background:#fff; border:1px solid var(--rule); padding:20px;">
+    <div class="it">
+      <h3>🌐 <b>ShortCraze SaaS</b> — Built custom keyword link shortener with 30+ dashboard themes, ISO timezone analytics, and QR code integration (400+ links created)[cite: 10].</h3>
     </div>
-    <div class="thl">
-      <div class="it"><h3>ShortCraze SaaS: Custom keywords, ISO performance graphs & 400+ links generated</h3></div>
-      <div class="it"><h3>Aashima AI: College Senior AI assistant feeding stray dogs with donations</h3></div>
-      <div class="it"><h3>Mega CEO Summit Podcast: Host & Community Public Speaker</h3></div>
+    <div class="it">
+      <h3>🤖 <b>Aashima AI College Senior</b> — Interactive AI companion simulation built for juniors to navigate college life and career doubts, integrated with a stray dog feeding donation initiative[cite: 10].</h3>
+    </div>
+    <div class="it">
+      <h3>💧 <b>Hack'Ndore Water Management</b> — Developed core algorithmic solution for Indore's water distribution challenges, recognized by the Government of Madhya Pradesh[cite: 10].</h3>
     </div>
   </div>
 </section>
@@ -293,7 +344,7 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
   </div>
 </section>
 
-<!-- PODCAST HIGHLIGHT SECTION WITH IMAGE 4 -->
+<!-- PODCAST HIGHLIGHT SECTION WITH IMAGE -->
 <section class="band" id="podcast-sec" style="background:var(--paper);">
   <div class="dbl">Leadership & Public Speaking</div>
   <div style="display:grid; grid-template-columns: 1fr 1.5fr; gap:28px; align-items:center;">
@@ -301,7 +352,7 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
     <div>
       <span class="k">Mega CEO Summit Podcast · 17th Sept 2024</span>
       <h2 style="font-family:var(--disp); font-size:26px; margin:8px 0 10px;">I Hosted the Mega "CEO Summit Podcast" at University 🏆</h2>
-      <p style="font-size:15px; line-height:1.55; color:#333;">Hosted CEOs of IT companies & fresh startups to foster community connections. Designed to showcase leadership and public speaking skills beyond just technical expertise — proving that speaking to convince large audiences requires confidence that sets real engineers apart.</p>
+      <p style="font-size:15px; line-height:1.55; color:#333;">Hosted CEOs of IT companies & fresh startups to foster community connections[cite: 10]. Designed to showcase leadership and public speaking skills beyond just technical expertise — proving that speaking to convince large audiences requires confidence that sets real engineers apart[cite: 10].</p>
     </div>
   </div>
 </section>
@@ -329,7 +380,7 @@ nav .links{display:none;position:absolute;top:100%;left:0;right:0;background:var
   </div>
 </section>
 
-<!-- CONTACT (NO INPUT FORM - DIRECT CONTACT INFO ONLY) -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="sh">Direct Correspondence & Contact</div>
   <div class="dl">
